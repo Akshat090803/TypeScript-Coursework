@@ -1,0 +1,20 @@
+npm install typescript -g
+npm install ts-node -g
+npx tsc --init (will create a tsConfig file)
+
+open tsConfig file 
+    -> change "rootDir": "./"    to "rootDir": "./src",  (add ./src)
+    -> change "outDir": "./",   to "outDir": "./dist",  (add ./dist)
+
+create a src folder (no need to create dist fodler it will automatically create see below steps )
+and create ypu .ts file
+//if you want to run like this
+  -> transpile .ts file to .js file than execute js file do like this...
+       -> in terminal right "tsc -b"  a .js file will gets created in dist folder  (when you run tsc -b the dist folder will automatically creates and js file will stored in it)
+       -> in terminal run js file like this node dist/file_name.js
+  
+
+//!if you directly want to excecute ts file without transpiling into js
+--> install ts-node globally
+in terminal run like this ts-node path_of_file
+
